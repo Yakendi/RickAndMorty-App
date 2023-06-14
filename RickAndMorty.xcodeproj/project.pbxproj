@@ -21,6 +21,9 @@
 		C6A1E1FF2A39E7A100BD5B9E /* LocationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E1FE2A39E7A100BD5B9E /* LocationsListCoordinator.swift */; };
 		C6A1E2012A39E7AD00BD5B9E /* LocationsListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2002A39E7AD00BD5B9E /* LocationsListViewFactory.swift */; };
 		C6A1E2042A39E8A300BD5B9E /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */; };
+		C6A1E2082A39EA0100BD5B9E /* EpisodesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2072A39EA0100BD5B9E /* EpisodesListCoordinator.swift */; };
+		C6A1E20A2A39EA2300BD5B9E /* EpisodesListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2092A39EA2300BD5B9E /* EpisodesListViewFactory.swift */; };
+		C6A1E20E2A39EAD400BD5B9E /* EpisodesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E20D2A39EAD400BD5B9E /* EpisodesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		C6A1E1FE2A39E7A100BD5B9E /* LocationsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListCoordinator.swift; sourceTree = "<group>"; };
 		C6A1E2002A39E7AD00BD5B9E /* LocationsListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewFactory.swift; sourceTree = "<group>"; };
 		C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
+		C6A1E2072A39EA0100BD5B9E /* EpisodesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListCoordinator.swift; sourceTree = "<group>"; };
+		C6A1E2092A39EA2300BD5B9E /* EpisodesListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewFactory.swift; sourceTree = "<group>"; };
+		C6A1E20D2A39EAD400BD5B9E /* EpisodesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewController.swift; sourceTree = "<group>"; };
 		CF3A21675015A61A24E3C665 /* Pods_RickAndMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMorty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,7 @@
 				C6A1E1F12A39ABAA00BD5B9E /* TabBarController.swift */,
 				C6A1E1F52A39CDCA00BD5B9E /* Characters Section */,
 				C6A1E1FD2A39E78900BD5B9E /* Locations Section */,
+				C6A1E2062A39E9D900BD5B9E /* Episodes Section */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -179,9 +186,43 @@
 		C6A1E2022A39E88900BD5B9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C6A1E2052A39E9D100BD5B9E /* Cell */,
 				C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C6A1E2052A39E9D100BD5B9E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C6A1E2062A39E9D900BD5B9E /* Episodes Section */ = {
+			isa = PBXGroup;
+			children = (
+				C6A1E2072A39EA0100BD5B9E /* EpisodesListCoordinator.swift */,
+				C6A1E2092A39EA2300BD5B9E /* EpisodesListViewFactory.swift */,
+				C6A1E20B2A39EAC300BD5B9E /* View */,
+			);
+			path = "Episodes Section";
+			sourceTree = "<group>";
+		};
+		C6A1E20B2A39EAC300BD5B9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6A1E20C2A39EAC800BD5B9E /* Cell */,
+				C6A1E20D2A39EAD400BD5B9E /* EpisodesListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6A1E20C2A39EAC800BD5B9E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A1E2082A39EA0100BD5B9E /* EpisodesListCoordinator.swift in Sources */,
 				C6A1E2012A39E7AD00BD5B9E /* LocationsListViewFactory.swift in Sources */,
 				C6A1E1F42A39ABDA00BD5B9E /* AppCoordinator.swift in Sources */,
 				C6A1E1FB2A39CE3200BD5B9E /* CharactersListViewFactory.swift in Sources */,
+				C6A1E20E2A39EAD400BD5B9E /* EpisodesListViewController.swift in Sources */,
 				C6A1E1F02A39A9F400BD5B9E /* Coordinator.swift in Sources */,
 				C6A1E1B12A2E3E9700BD5B9E /* CharactersListViewController.swift in Sources */,
 				C6A1E1AD2A2E3E9700BD5B9E /* AppDelegate.swift in Sources */,
@@ -309,6 +352,7 @@
 				C6A1E1AF2A2E3E9700BD5B9E /* SceneDelegate.swift in Sources */,
 				C6A1E2042A39E8A300BD5B9E /* LocationsListViewController.swift in Sources */,
 				C6A1E1F72A39CDE600BD5B9E /* CharactersListCoordinator.swift in Sources */,
+				C6A1E20A2A39EA2300BD5B9E /* EpisodesListViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

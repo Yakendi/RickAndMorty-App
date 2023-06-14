@@ -10,6 +10,7 @@ import UIKit
 enum TabBarItems {
     case characters
     case locations
+    case episodes
     
     var title: String {
         switch self {
@@ -17,6 +18,8 @@ enum TabBarItems {
             return "Персонажи"
         case .locations:
             return "Локации"
+        case .episodes:
+            return "Эпизоды"
         }
     }
     
@@ -26,6 +29,8 @@ enum TabBarItems {
             return UIImage(systemName: "person.fill") ?? UIImage()
         case .locations:
             return UIImage(systemName: "globe.americas.fill") ?? UIImage()
+        case .episodes:
+            return UIImage(systemName: "tv") ?? UIImage()
         }
     }
 }
@@ -35,6 +40,7 @@ final class TabBarController: UITabBarController {
     // MARK: - Private
     private let charactersList = CharactersListCoordinator()
     private let locationsList = LocationsListCoordinator()
+    private let episodesList = EpisodesListCoordinator()
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -53,12 +59,23 @@ private extension TabBarController {
             image: TabBarItems.characters.image,
             tag: 1
         )
+        
         locationsList.navigationController.tabBarItem = UITabBarItem(
             title: TabBarItems.locations.title,
             image: TabBarItems.locations.image,
             tag: 2
         )
         
-        setViewControllers([charactersList.navigationController, locationsList.navigationController], animated: true)
+        episodesList.navigationController.tabBarItem = UITabBarItem(
+            title: TabBarItems.episodes.title,
+            image: TabBarItems.episodes.image,
+            tag: 3
+        )
+        
+        setViewControllers([
+            charactersList.navigationController,
+            locationsList.navigationController,
+            episodesList.navigationController
+        ], animated: true)
     }
 }
