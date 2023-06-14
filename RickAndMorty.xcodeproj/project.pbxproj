@@ -18,6 +18,9 @@
 		C6A1E1F42A39ABDA00BD5B9E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E1F32A39ABDA00BD5B9E /* AppCoordinator.swift */; };
 		C6A1E1F72A39CDE600BD5B9E /* CharactersListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E1F62A39CDE600BD5B9E /* CharactersListCoordinator.swift */; };
 		C6A1E1FB2A39CE3200BD5B9E /* CharactersListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E1FA2A39CE3200BD5B9E /* CharactersListViewFactory.swift */; };
+		C6A1E1FF2A39E7A100BD5B9E /* LocationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E1FE2A39E7A100BD5B9E /* LocationsListCoordinator.swift */; };
+		C6A1E2012A39E7AD00BD5B9E /* LocationsListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2002A39E7AD00BD5B9E /* LocationsListViewFactory.swift */; };
+		C6A1E2042A39E8A300BD5B9E /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		C6A1E1F32A39ABDA00BD5B9E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C6A1E1F62A39CDE600BD5B9E /* CharactersListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListCoordinator.swift; sourceTree = "<group>"; };
 		C6A1E1FA2A39CE3200BD5B9E /* CharactersListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewFactory.swift; sourceTree = "<group>"; };
+		C6A1E1FE2A39E7A100BD5B9E /* LocationsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListCoordinator.swift; sourceTree = "<group>"; };
+		C6A1E2002A39E7AD00BD5B9E /* LocationsListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewFactory.swift; sourceTree = "<group>"; };
+		C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
 		CF3A21675015A61A24E3C665 /* Pods_RickAndMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMorty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 				C6A1E1F32A39ABDA00BD5B9E /* AppCoordinator.swift */,
 				C6A1E1F12A39ABAA00BD5B9E /* TabBarController.swift */,
 				C6A1E1F52A39CDCA00BD5B9E /* Characters Section */,
+				C6A1E1FD2A39E78900BD5B9E /* Locations Section */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -157,6 +164,24 @@
 				C6A1E1B72A2E3E9900BD5B9E /* LaunchScreen.storyboard */,
 			);
 			path = Resorces;
+			sourceTree = "<group>";
+		};
+		C6A1E1FD2A39E78900BD5B9E /* Locations Section */ = {
+			isa = PBXGroup;
+			children = (
+				C6A1E1FE2A39E7A100BD5B9E /* LocationsListCoordinator.swift */,
+				C6A1E2002A39E7AD00BD5B9E /* LocationsListViewFactory.swift */,
+				C6A1E2022A39E88900BD5B9E /* View */,
+			);
+			path = "Locations Section";
+			sourceTree = "<group>";
+		};
+		C6A1E2022A39E88900BD5B9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6A1E2032A39E8A300BD5B9E /* LocationsListViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,13 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A1E2012A39E7AD00BD5B9E /* LocationsListViewFactory.swift in Sources */,
 				C6A1E1F42A39ABDA00BD5B9E /* AppCoordinator.swift in Sources */,
 				C6A1E1FB2A39CE3200BD5B9E /* CharactersListViewFactory.swift in Sources */,
 				C6A1E1F02A39A9F400BD5B9E /* Coordinator.swift in Sources */,
 				C6A1E1B12A2E3E9700BD5B9E /* CharactersListViewController.swift in Sources */,
 				C6A1E1AD2A2E3E9700BD5B9E /* AppDelegate.swift in Sources */,
 				C6A1E1F22A39ABAA00BD5B9E /* TabBarController.swift in Sources */,
+				C6A1E1FF2A39E7A100BD5B9E /* LocationsListCoordinator.swift in Sources */,
 				C6A1E1AF2A2E3E9700BD5B9E /* SceneDelegate.swift in Sources */,
+				C6A1E2042A39E8A300BD5B9E /* LocationsListViewController.swift in Sources */,
 				C6A1E1F72A39CDE600BD5B9E /* CharactersListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
